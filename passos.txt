@@ -1,7 +1,10 @@
 /* Configuração do GIT */
 git config --global user.email gallojunior@gmail.com
 git config --global user.name GalloJunior
-git clone
+git clone https://github.com/gallojunior/mtec-devsB.git
+
+cd MtecDevs
+dotnet restore
 
 /* Começando uma solução e um projeto MVC */
 dotnet new sln --name MtecDevs
@@ -19,4 +22,19 @@ Usuários  - Devs/Admin/Prof
     Dados básicos: Nome, Data nascimento, Foto, TipoDev
 TipoDev - Front/Back/Full/UX-UI/Design/
 
+/* Salvando no GitHub */ 
+git add .
+git commit -m "Criado o projeto e as classes de dados"
+git push
+
+Criou a classe de Contexto
+Criou a ConnectionString
+Adicionou os serviços de DbContext e Identity ao program
+
+Criar a migração
+dotnet ef
+
+dotnet tool install --global dotnet-ef
+dotnet ef migrations add criar-banco
+dotnet ef database update
 

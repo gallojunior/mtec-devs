@@ -239,6 +239,43 @@ namespace MtecDevs.Migrations
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
+            migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[,]
+                {
+                    { "3cbdd9b3-561e-4498-a67a-74c7bbc4fb63", "c6040098-cd76-4f37-9ae8-24bca9888f34", "Usuário", "USUÁRIO" },
+                    { "81180a7f-e7c0-4fc6-910d-af7800e1e864", "c5264773-bc94-48cd-99fc-7194c5df5e5b", "Administrador", "ADMINISTRADOR" },
+                    { "ef568eb7-78ad-4a1f-be5c-d67c7b0ed964", "e5acec85-4069-47ea-ae90-5ac13ef326ab", "Moderador", "MODERADOR" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUsers",
+                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
+                values: new object[] { "c2e298ad-176b-49bb-b8ef-7b137009c9c3", 0, "e034835c-2a0f-4948-a0ec-e9d51442a938", "gallojunior@gmail.com", true, false, null, "GALLOJUNIOR@GMAIL.COM", "GALLOJUNIOR", "AQAAAAEAACcQAAAAEGvNnPaee5Q7OR/M1qA8Sf6UNY0C/2275XKN2bjsGAaak7nDEttGQOPmMel/DgbAJA==", "14912345678", true, "47cf22e1-2711-4f5d-bca6-a73b563a870d", false, "GalloJunior" });
+
+            migrationBuilder.InsertData(
+                table: "TipoDev",
+                columns: new[] { "Id", "Nome" },
+                values: new object[,]
+                {
+                    { (byte)1, "FullStack" },
+                    { (byte)2, "FrontEnd" },
+                    { (byte)3, "BackEnd" },
+                    { (byte)4, "Design" },
+                    { (byte)5, "Jogos" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUserRoles",
+                columns: new[] { "RoleId", "UserId" },
+                values: new object[] { "81180a7f-e7c0-4fc6-910d-af7800e1e864", "c2e298ad-176b-49bb-b8ef-7b137009c9c3" });
+
+            migrationBuilder.InsertData(
+                table: "Usuario",
+                columns: new[] { "UserId", "DataNascimento", "Foto", "Nome", "TipoDevId" },
+                values: new object[] { "c2e298ad-176b-49bb-b8ef-7b137009c9c3", new DateTime(1981, 8, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), "/img/usuarios/avatar.png", "José Antonio Gallo Junior", (byte)1 });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",

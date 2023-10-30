@@ -47,22 +47,22 @@ namespace MtecDevs.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "81180a7f-e7c0-4fc6-910d-af7800e1e864",
-                            ConcurrencyStamp = "c5264773-bc94-48cd-99fc-7194c5df5e5b",
+                            Id = "4a129659-78f3-4247-9a3f-f6158311e886",
+                            ConcurrencyStamp = "5ac90406-e115-49d4-a0ed-15a3c1ce5e0d",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "ef568eb7-78ad-4a1f-be5c-d67c7b0ed964",
-                            ConcurrencyStamp = "e5acec85-4069-47ea-ae90-5ac13ef326ab",
+                            Id = "27570ef6-ab7f-41d2-89e7-b7550da3ee05",
+                            ConcurrencyStamp = "2bf1e89b-0dd6-40a9-9064-2c9484a27799",
                             Name = "Moderador",
                             NormalizedName = "MODERADOR"
                         },
                         new
                         {
-                            Id = "3cbdd9b3-561e-4498-a67a-74c7bbc4fb63",
-                            ConcurrencyStamp = "c6040098-cd76-4f37-9ae8-24bca9888f34",
+                            Id = "8fe1f8cd-9765-41b7-9d88-293536233f4d",
+                            ConcurrencyStamp = "fa57c86d-3e06-457e-a5f9-a947b2a42378",
                             Name = "Usuário",
                             NormalizedName = "USUÁRIO"
                         });
@@ -157,18 +157,18 @@ namespace MtecDevs.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "c2e298ad-176b-49bb-b8ef-7b137009c9c3",
+                            Id = "a37bbf0d-03d1-47ad-983f-2cd22f534a4c",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "e034835c-2a0f-4948-a0ec-e9d51442a938",
+                            ConcurrencyStamp = "f613844e-13c5-4402-962c-bd873138ac4f",
                             Email = "gallojunior@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "GALLOJUNIOR@GMAIL.COM",
                             NormalizedUserName = "GALLOJUNIOR",
-                            PasswordHash = "AQAAAAEAACcQAAAAEGvNnPaee5Q7OR/M1qA8Sf6UNY0C/2275XKN2bjsGAaak7nDEttGQOPmMel/DgbAJA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEPBxEdXfsh9Rc5chaqwl/2xg/wMnDzQBFKY3OM/VUvzpbAKOkiMk2WgpH+2y556wmw==",
                             PhoneNumber = "14912345678",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "47cf22e1-2711-4f5d-bca6-a73b563a870d",
+                            SecurityStamp = "320bf67e-35ca-49f0-ac02-1c2eac9c1514",
                             TwoFactorEnabled = false,
                             UserName = "GalloJunior"
                         });
@@ -236,8 +236,8 @@ namespace MtecDevs.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "c2e298ad-176b-49bb-b8ef-7b137009c9c3",
-                            RoleId = "81180a7f-e7c0-4fc6-910d-af7800e1e864"
+                            UserId = "a37bbf0d-03d1-47ad-983f-2cd22f534a4c",
+                            RoleId = "4a129659-78f3-4247-9a3f-f6158311e886"
                         });
                 });
 
@@ -331,7 +331,7 @@ namespace MtecDevs.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "c2e298ad-176b-49bb-b8ef-7b137009c9c3",
+                            UserId = "a37bbf0d-03d1-47ad-983f-2cd22f534a4c",
                             DataNascimento = new DateTime(1981, 8, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Foto = "/img/usuarios/avatar.png",
                             Nome = "José Antonio Gallo Junior",
